@@ -15,8 +15,8 @@ function Intro({ theme }) {
         transition={{ duration: 0.75 }}
       >
         <img
-          src="https://avatars.githubusercontent.com/u/53510578?s=400&u=cbc82579d3c19d480e3b59fc1562d5c1bd4f6c48&v=4"
-          className="rounded-full"
+          src="/public/assets/barath-picture.jpg"
+          className="rounded-full w-40 h-40 object-cover"
         />
       </motion.div>
       <TypeWriterEffect
