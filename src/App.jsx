@@ -66,11 +66,11 @@ function App() {
       <button
         type="button"
         onClick={handleThemeSwitch}
-        className="fixed z-10 right-20 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md"
+        className="fixed z-10 right-3 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md"
       >
         {theme === "dark" ? sun : moon}
       </button>
-      <div className="text-stone-900 dark:text-stone-300 min-h-screen font-inter dark:bg-slate-800 bg-slate-50">
+      <div className="text-stone-900 dark:text-stone-300 min-h-screen dark:bg-slate-800 bg-[#F0F4BE] font-mono">
         <div className="max-w-5xl w-11/12 mx-auto">
           <Intro theme={theme} />
           <Portfolio />
