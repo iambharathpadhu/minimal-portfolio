@@ -6,10 +6,10 @@ export default [
     link: "https://medium.com/assembly-engineering/intern-to-full-time-journey-at-assembly-88d5b7a5eae2",
   },
   {
-    title: "Looking back on the Assembly Hackathon",
+    title: "Ecommerce Website using React.js",
     imgUrl:
-      "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*znSzRU-q6Y5al4fN24lE1Q.jpeg",
-    link: "https://medium.com/assembly-engineering/looking-back-on-the-assembly-hackathon-694d20e2e48d",
+      "https://w7.pngwing.com/pngs/621/196/png-transparent-e-commerce-logo-logo-e-commerce-electronic-business-ecommerce-angle-text-service.png",
+    link: "https://joyful-alfajores-8fa0c0.netlify.app",
   },
   {
     title:
