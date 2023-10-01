@@ -8,7 +8,7 @@ export default [
   {
     title: "Ecommerce Website using React.js",
     imgUrl:
-      "https://w7.pngwing.com/pngs/621/196/png-transparent-e-commerce-logo-logo-e-commerce-electronic-business-ecommerce-angle-text-service.png",
+      "https://www.searchenginejournal.com/wp-content/uploads/2020/03/20-free-things-you-need-to-do-after-launching-your-ecommerce-website-5e664bcb60da5.png",
     link: "https://joyful-alfajores-8fa0c0.netlify.app",
   },
   {
