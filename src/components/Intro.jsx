@@ -13,7 +13,7 @@ function Intro({ theme }) {
         transition={{ duration: 0.75 }}
       >
         <img
-          src="https://media.licdn.com/dms/image/D5603AQGvl8ok0xTTRg/profile-displayphoto-shrink_400_400/0/1696164918452?e=1701907200&v=beta&t=W88QaI1FVPYZ9B-Flmn-YeLc167fxU5Pk-_nNqnF7GA"
+          src="https://media.licdn.com/dms/image/D5603AQG2Cbuz8hwIDg/profile-displayphoto-shrink_800_800/0/1698475291519?e=1704931200&v=beta&t=P0un7VoIboyQA1oifXr6R2hA0MmVebMQHCbDGgnMKKQ"
           className="rounded-full w-40 h-40 object-cover"
         />
       </motion.div>
