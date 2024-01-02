@@ -1,25 +1,62 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
+
+const visible = { opacity: 1, y: 0, x: 0, transition: { duration: 0.5 } };
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 10, x: -75 },
+  visible,
+};
 
 function Intro({ theme }) {
+  console.log("Theme", theme);
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 20,
+    restDelta: 0.001,
+  });
+  const bgColor = theme === "dark" ? "#f5f5f5" : "#611bb8";
   return (
     <div className="flex items-center justify-center flex-col text-center pt-20 pb-6">
-      <p className="text-base mb-3 font-medium pt-2 md:text-4xl underline">
+      <motion.div
+        className="progress-bar"
+        style={{
+          scaleX,
+          width: "100vw",
+          height: "20px",
+          background: bgColor,
+          bottom: 0,
+          left: 0,
+          position: "fixed",
+        }}
+      />
+      <motion.p
+        className="text-base mb-3 font-medium pt-2 md:text-4xl underline"
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.75 }}
+      >
         Barath's Portfolio
-      </p>
+      </motion.p>
       <motion.div
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75 }}
       >
         <img
-          src="https://media.licdn.com/dms/image/D5603AQG2Cbuz8hwIDg/profile-displayphoto-shrink_800_800/0/1698475291519?e=1704931200&v=beta&t=P0un7VoIboyQA1oifXr6R2hA0MmVebMQHCbDGgnMKKQ"
+          src="public/assets/barath-photo.jpeg"
           className="rounded-full w-40 h-40 object-cover"
         />
       </motion.div>
-      <p className="text-base mb-3 font-medium pt-2 md:text-2xl">
-        Software Development Engineer
-      </p>
+      <motion.div
+        className="text-base mb-3 font-medium pt-2 md:text-2xl"
+        initial={{ opacity: 0, y: 0, x: -500 }}
+        animate={{ opacity: 1, y: 0, x: 0 }}
+        transition={{ duration: 1, delay: 0.5, type: "spring" }}
+      >
+        Senior Frontend Developer
+      </motion.div>
       <p className="text-sm max-w-xl mb-6">
         Hello there! My name is Barath, and I hail from the vibrant city of
         Coimbatore. Beyond being a passionate resident of this beautiful place,
