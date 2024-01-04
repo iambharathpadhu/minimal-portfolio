@@ -9,7 +9,6 @@ const itemVariants = {
 };
 
 function Intro({ theme }) {
-  console.log("Theme", theme);
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -45,7 +44,7 @@ function Intro({ theme }) {
         transition={{ duration: 0.75 }}
       >
         <img
-          src="public/assets/barath-photo.jpeg"
+          src="https://lh3.googleusercontent.com/a/ACg8ocKjmJ8wjwjpn9SNRx2bOoWfBxI8_B6RQwGcgIqYwaasJW0=s288-c-no"
           className="rounded-full w-40 h-40 object-cover"
         />
       </motion.div>
