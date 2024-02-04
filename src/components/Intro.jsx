@@ -28,6 +28,7 @@ function Intro({ theme }) {
           bottom: 0,
           left: 0,
           position: "fixed",
+          zIndex: 100,
         }}
       />
       <motion.p
@@ -36,7 +37,7 @@ function Intro({ theme }) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75 }}
       >
-        Barath's Portfolio
+        Welcome to my Portfolio ! Period
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: -100 }}

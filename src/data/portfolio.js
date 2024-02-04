@@ -33,7 +33,7 @@ export default [
   },
   {
     title: "More of my Blogs on Medium",
-    imgUrl: "/public/assets/medium.png",
+    imgUrl: "/public/assets/mediumImage.png",
     link: "https://medium.com/@iambharathpadhu",
   },
 ];

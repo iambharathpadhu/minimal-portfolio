@@ -8,7 +8,7 @@ export default [
   {
     year: "2021- Today",
     title: "Software Engineer at Assembly",
-    duration: "2 years",
+    duration: "3 years",
     details:
       "At Assembly, I work on the Frontend team.At Assembly, I write code, create beautiful UX, and have fun with my colleagues.",
   },
