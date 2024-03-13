@@ -1,9 +1,9 @@
 export default [
   {
-    title: "Intern to Full-Time Journey at Assembly",
+    title: "Signals(One of my most like Blogs!)",
     imgUrl:
-      "https://miro.medium.com/v2/resize:fit:1400/1*MIHg8J827Jhy_9kC89Pumg.jpeg",
-    link: "https://medium.com/assembly-engineering/intern-to-full-time-journey-at-assembly-88d5b7a5eae2",
+      "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*IMnyWe_j0grMOrIeCzC-uw.png",
+    link: "https://medium.com/javascript-in-plain-english/signals-a-performant-alternative-to-react-hooks-ecdd6de61f62",
   },
   {
     title: "Ecommerce Website using React.js",
@@ -32,8 +32,8 @@ export default [
     link: "https://medium.com/assembly-engineering/harnessing-the-power-of-tailwind-css-for-react-7bc4833db5fd",
   },
   {
-    title: "More of my Blogs on Medium",
-    imgUrl: "/public/assets/mediumImage.png",
-    link: "https://medium.com/@iambharathpadhu",
+    title: "Lights,Camera, Framer Motion Talk",
+    imgUrl: "/public/assets/talk-image.png",
+    link: "https://youtu.be/JWTFyKvVZ5o?si=yYgpt7J_6MeFrwNg",
   },
 ];
