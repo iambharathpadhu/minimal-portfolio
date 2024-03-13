@@ -13,9 +13,10 @@ function Portfolio() {
             className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden"
             initial={{ opacity: 0, translateX: -50, translateY: -50 }}
             animate={{ opacity: 1, translateX: 0, translateY: 0 }}
-            transition={{ delay: i * 0.4, duration: 0.1 }}
+            transition={{ delay: i * 0.5, duration: 0.1 }}
           >
             <PortfolioItem
+              key={project.title}
               imgUrl={project.imgUrl}
               title={project.title}
               link={project.link}

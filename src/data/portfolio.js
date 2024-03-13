@@ -1,5 +1,10 @@
 export default [
   {
+    title: "Lights,Camera, Framer Motion Talk",
+    imgUrl: "/assets/talk-image.png",
+    link: "https://youtu.be/JWTFyKvVZ5o?si=yYgpt7J_6MeFrwNg",
+  },
+  {
     title: "Signals(One of my most like Blogs!)",
     imgUrl:
       "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*IMnyWe_j0grMOrIeCzC-uw.png",
@@ -30,10 +35,5 @@ export default [
     imgUrl:
       "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*sU5734olc18idaVt9YR7RA.jpeg",
     link: "https://medium.com/assembly-engineering/harnessing-the-power-of-tailwind-css-for-react-7bc4833db5fd",
-  },
-  {
-    title: "Lights,Camera, Framer Motion Talk",
-    imgUrl: "/public/assets/talk-image.png",
-    link: "https://youtu.be/JWTFyKvVZ5o?si=yYgpt7J_6MeFrwNg",
   },
 ];

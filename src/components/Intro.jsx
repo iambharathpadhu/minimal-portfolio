@@ -1,5 +1,6 @@
 import React from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
+import Welcome from "./Welcome";
 
 const visible = { opacity: 1, y: 0, x: 0, transition: { duration: 0.5 } };
 
@@ -31,21 +32,15 @@ function Intro({ theme }) {
           zIndex: 100,
         }}
       />
-      <motion.p
-        className="text-base mb-3 font-medium pt-2 md:text-4xl underline"
-        initial={{ opacity: 0, y: -100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.75 }}
-      >
-        Welcome to my Portfolio ! Period
-      </motion.p>
+      <Welcome />
       <motion.div
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75 }}
+        whileHover={{ scale: 1.1 }}
       >
         <img
-          src="https://lh3.googleusercontent.com/a/ACg8ocKjmJ8wjwjpn9SNRx2bOoWfBxI8_B6RQwGcgIqYwaasJW0=s288-c-no"
+          src="/assets/barath-photo.jpeg"
           className="rounded-full w-40 h-40 object-cover"
         />
       </motion.div>
@@ -57,13 +52,24 @@ function Intro({ theme }) {
       >
         Senior Frontend Developer
       </motion.div>
-      <p className="text-sm max-w-xl mb-6">
+      <motion.p
+        className="text-sm max-w-xl mb-6 text-justify rounded-lg p-4"
+        initial={{
+          boxShadow: "0px 0px 0px rgba(0, 0, 0, 0)",
+          borderColor: "transparent",
+        }}
+        animate={{
+          boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.05)",
+          borderColor: "#ccc",
+        }}
+        transition={{ duration: 0.5 }}
+      >
         Hello there! My name is Barath, and I hail from the vibrant city of
         Coimbatore. Beyond being a passionate resident of this beautiful place,
         I'm an ardent Messi fan, always cheering for him on the field. In my
         free time, I'm not just a spectator; I'm also a creator. I express my
         thoughts and ideas through writing, particularly in the form of blogs.
-      </p>
+      </motion.p>
     </div>
   );
 }
