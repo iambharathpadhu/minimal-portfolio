@@ -42,6 +42,8 @@ function Intro({ theme }) {
         <img
           src="/assets/barath-photo.jpeg"
           className="rounded-full w-40 h-40 object-cover"
+          height="160px"
+          width="160px"
         />
       </motion.div>
       <motion.div
